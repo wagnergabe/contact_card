@@ -1,9 +1,10 @@
 import  "./form";
 import "./submit";
 import { Tooltip, Toast, Popover } from 'bootstrap';
-import { initdb } from './database';
+import { initdb, getDb, postDb } from './database';
 import 'regenerator-runtime/runtime';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 // Import CSS files
 import "../css/index.css";
@@ -15,6 +16,7 @@ import Cat from '../images/cat.jpeg';
 
 window.addEventListener('load', function () {
     initdb();
+
     document.getElementById('logo').src = Logo;
     document.getElementById('bearThumbnail').src = Bear;
     document.getElementById('dogThumbnail').src = Dog;
